@@ -37,7 +37,7 @@ public class WeatherFetcher {
      */
     public String fetchWeatherData() {
         LocalDate endDate = LocalDate.now();
-        LocalDate startDate = endDate.minusDays(30);
+        LocalDate startDate = endDate.minusDays(29);
 
         // Build the Open-Meteo API URL with query parameters
         String apiUrl = String.format(
