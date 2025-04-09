@@ -15,7 +15,7 @@ An activity for summarizing temperatures for a given area! You must make frequen
 1. This will create a new file named `temps`. Open it in VS Code and verify that it holds the temperatures. Add, commit, and push this file with git.
 
 ## Wave 2: Reading from System.in
-Open `WeatherFetcher.java`. This is where you will be doing your coding for this assignment. For Wave 2, please use a Scanner to read doubles from System.in, and print each double on a new line. To run your code, have it read from the temps file your created in Wave 1. This command will compile your code and run it while directing the temps file into System.in.
+Open `WeatherSummary.java`. This is where you will be doing your coding for this assignment. For Wave 2, please use a Scanner to read doubles from System.in, and print each double on a new line. To run your code, have it read from the temps file your created in Wave 1. This command will compile your code and run it while directing the temps file into System.in.
 ```
 javac src/WeatherSummary.java && java -cp src WeatherSummary < temps
 ```
