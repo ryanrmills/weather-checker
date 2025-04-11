@@ -23,13 +23,19 @@ public class WeatherSummary {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("This part of the code is working.");
+        double minTemp = scan.nextDouble();
+        double maxTemp = 0;
+        
 
         while (scan.hasNextDouble()){
             double currTemp = scan.nextDouble();
-            System.out.println("Temperature: " + currTemp);
+            
+            minTemp = Math.min(minTemp, currTemp);
+            maxTemp = Math.max(maxTemp, currTemp);
         }
 
-        scan.close();
+        System.out.println("Max: " + maxTemp);
+        System.out.println("Min: " + minTemp);
+        
     }
 }
